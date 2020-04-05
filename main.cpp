@@ -19,20 +19,22 @@ int main() {
     TextRenderSystem trs(&ecs, &taskmaster, &renderer);
     SpriteRenderSystem srs(&ecs, &taskmaster, &renderer);
 
-    ecs.addEntity((new jl::Entity())
-                          ->addComponent(new TextComponent("Hello!"))
-                          ->addComponent(
-                                  new UITransformComponent(sf::Vector2f(20.0f, 20.0f), UISnap::Begin, UISnap::Begin)));
+    ecs.addEntity(new jl::Entity{
+            new TextComponent("Hello!"),
+            new UITransformComponent({ 20.0f, 20.0f }, Begin, Begin)
+    });
 
-    ecs.addEntity((new jl::Entity())
-                          ->addComponent(new TextComponent("I am an entity with a TextComponent!"))
-                          ->addComponent(
-                                  new UITransformComponent(sf::Vector2f(20.0f, 20.0f), UISnap::End, UISnap::End)));
 
-    ecs.addEntity((new jl::Entity())
-                          ->addComponent(new SpriteComponent(textureManager.get("../shrek.png")))
-                          ->addComponent(
-                                  new UITransformComponent(sf::Vector2f(0.0f, 0.0f), UISnap::Center, UISnap::Center, sf::Vector2f(0.2f, 0.2f))));
+    ecs.addEntity(new jl::Entity{
+            new TextComponent("I am an entity with a TextComponent!"),
+            new UITransformComponent({ 20.0f, 20.0f }, End, End)
+    });
+
+    ecs.addEntity(new jl::Entity{
+            new SpriteComponent(textureManager.get("../shrek.png")),
+            new UITransformComponent({ 0.0f, 0.0f }, Center, Center,
+                                     { 0.2f, 0.2f })
+    });
 
     taskmaster.start();
     return 0;
