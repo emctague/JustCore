@@ -1,4 +1,4 @@
-// RenderSystem - 
+// TextRenderSystem -
 // 
 // Copyright (c) 2020 Ethan McTague
 #pragma once
@@ -7,6 +7,8 @@
 #include <SFML/Graphics.hpp>
 #include <utility>
 #include "TransformComponent.h"
+#include "UITransformComponent.h"
+#include "Renderer.h"
 
 class TextComponent : public jl::Component {
 public:
@@ -14,15 +16,15 @@ public:
     std::string text;
 };
 
-class RenderSystem : public jl::System<RenderSystem, TextComponent, TransformComponent> {
+class TextRenderSystem : public jl::System<TextRenderSystem, TextComponent, UITransformComponent> {
 
-    sf::RenderWindow window;
     sf::Font debugFont;
     sf::Text text;
+    Renderer *renderer;
 
 public:
 
-    RenderSystem(jl::ECS *ecs, jl::Taskmaster *tm);
+    TextRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *renderer);
     bool updateTask(jl::Taskmaster *taskmaster) override;
 
 };
