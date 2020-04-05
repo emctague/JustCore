@@ -6,15 +6,15 @@
 #include <JustLayers/System.h>
 #include <SFML/Graphics.hpp>
 #include <utility>
+#include "TransformComponent.h"
 
 class TextComponent : public jl::Component {
 public:
-    inline TextComponent(std::string text, sf::Vector2f position) : text(std::move(text)), position(position) {}
-    sf::Vector2f position;
+    inline TextComponent(std::string text) : text(std::move(text)) {}
     std::string text;
 };
 
-class RenderSystem : public jl::System<RenderSystem, TextComponent> {
+class RenderSystem : public jl::System<RenderSystem, TextComponent, TransformComponent> {
 
     sf::RenderWindow window;
     sf::Font debugFont;
