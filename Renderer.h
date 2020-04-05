@@ -13,7 +13,7 @@ public:
 
     explicit Renderer(jl::Taskmaster *tm);
 
-    bool updateTask(jl::Taskmaster *taskmaster) override;
+    bool updateTask(jl::Taskmaster *taskmaster, float delta) override;
 
     template<typename T>
     void drawHUD(T *drawable, UITransformComponent *uiTransform) {

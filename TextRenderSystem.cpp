@@ -15,7 +15,7 @@ TextRenderSystem::TextRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *r
     text.setFont(debugFont);
 }
 
-bool TextRenderSystem::updateTask(jl::Taskmaster *taskmaster) {
+bool TextRenderSystem::updateTask(jl::Taskmaster *taskmaster, float delta) {
 
     for (auto& entity : entities) {
         auto txt = std::get<std::shared_ptr<TextComponent>>(entity.second);

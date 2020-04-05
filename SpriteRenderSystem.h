@@ -18,6 +18,6 @@ class SpriteRenderSystem : public jl::System<SpriteRenderSystem, SpriteComponent
 public:
 
     SpriteRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *renderer);
-    bool updateTask(jl::Taskmaster *taskmaster) override;
+    bool updateTask(jl::Taskmaster *taskmaster, float delta) override;
 
 };

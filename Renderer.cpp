@@ -1,6 +1,6 @@
 #include "Renderer.h"
 
-bool Renderer::updateTask(jl::Taskmaster *taskmaster) {
+bool Renderer::updateTask(jl::Taskmaster *taskmaster, float delta) {
 
     /// Handle window events
     sf::Event event{};

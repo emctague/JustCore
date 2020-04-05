@@ -25,6 +25,6 @@ class TextRenderSystem : public jl::System<TextRenderSystem, TextComponent, UITr
 public:
 
     TextRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *renderer);
-    bool updateTask(jl::Taskmaster *taskmaster) override;
+    bool updateTask(jl::Taskmaster *taskmaster, float delta) override;
 
 };

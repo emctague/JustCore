@@ -3,7 +3,7 @@
 SpriteRenderSystem::SpriteRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *renderer) : System(ecs, tm), renderer(renderer) {
 }
 
-bool SpriteRenderSystem::updateTask(jl::Taskmaster *taskmaster) {
+bool SpriteRenderSystem::updateTask(jl::Taskmaster *taskmaster, float delta) {
 
     for (auto& entity : entities) {
         auto spr = std::get<std::shared_ptr<SpriteComponent>>(entity.second);
