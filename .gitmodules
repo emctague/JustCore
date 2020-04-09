@@ -1,3 +1,6 @@
 [submodule "JustLayers"]
 	path = JustLayers
 	url = https://github.com/emctague/JustLayers
+[submodule "box2d"]
+	path = box2d
+	url = https://github.com/erincatto/box2d
