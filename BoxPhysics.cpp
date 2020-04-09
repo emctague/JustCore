@@ -9,7 +9,7 @@ BoxPhysics::BoxPhysics(jl::Taskmaster *taskmaster) : gravity(0.0f, 32.0f), world
 }
 
 bool BoxPhysics::updateTask(jl::Taskmaster *taskmaster, float delta) {
-    world->Step(delta, 6, 2);
+    world->Step(delta, 8, 4);
     return true;
 }
 
