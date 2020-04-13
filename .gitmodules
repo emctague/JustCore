@@ -4,6 +4,3 @@
 [submodule "box2d"]
 	path = box2d
 	url = https://github.com/erincatto/box2d
-[submodule "JustGL"]
-	path = JustGL
-	url = https://github.com/emctague/JustGL
