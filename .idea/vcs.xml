@@ -4,5 +4,9 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/JustGL" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/JustLayers" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/box2d" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/JustLayers/test/googletest-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/out/build/x64-Debug-UWP/JustLayers/test/googletest-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/out/build/x64-Debug/JustLayers/test/googletest-src" vcs="Git" />
   </component>
 </project>

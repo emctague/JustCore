@@ -1,4 +1,5 @@
 #include "SpriteRenderSystem.h"
+/*
 
 SpriteRenderSystem::SpriteRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *renderer) : System(ecs, tm), renderer(renderer) {
 }
@@ -15,3 +16,4 @@ bool SpriteRenderSystem::updateTask(jl::Taskmaster *taskmaster, float delta) {
 
     return true;
 }
+*/

@@ -1,6 +1,6 @@
 #pragma once
 
-#include <JustLayers/System.h>
+#include <JustLayers/System.h>/*
 #include <SFML/Graphics.hpp>
 #include "Renderer.h"
 
@@ -21,3 +21,4 @@ public:
     bool updateTask(jl::Taskmaster *taskmaster, float delta) override;
 
 };
+*/

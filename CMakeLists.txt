@@ -3,7 +3,7 @@ project(JustCore)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_subdirectory(JustGL)
 add_subdirectory(JustLayers)
 add_subdirectory(box2d)
-add_subdirectory(src)
+add_subdirectory(JustCore)
+add_subdirectory(DesktopEntry)

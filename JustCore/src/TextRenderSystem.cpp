@@ -3,7 +3,7 @@
 // Copyright (c) 2020 Ethan McTague
 #include <iostream>
 #include "TextRenderSystem.h"
-#include "UITransformComponent.h"
+/*#include "UITransformComponent.h"
 
 TextRenderSystem::TextRenderSystem(jl::ECS *ecs, jl::Taskmaster *tm, Renderer *renderer) :
     System(ecs, tm),
@@ -27,3 +27,4 @@ bool TextRenderSystem::updateTask(jl::Taskmaster *taskmaster, float delta) {
 
     return true;
 }
+*/

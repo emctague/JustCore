@@ -2,7 +2,7 @@
 // 
 // Copyright (c) 2020 Ethan McTague
 #pragma once
-
+/*
 #include <JustLayers/System.h>
 #include <SFML/Graphics.hpp>
 #include <utility>
@@ -28,3 +28,4 @@ public:
     bool updateTask(jl::Taskmaster *taskmaster, float delta) override;
 
 };
+*/
